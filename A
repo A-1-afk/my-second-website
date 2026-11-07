@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ကျွန်တော့် Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">MySite</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1 class="hero-title">ကြိုဆိုပါတယ် 👋</h1>
+        <p class="hero-text">ဒါက ကျွန်တော့် ပထမဆုံး Website ပါ</p>
+        <button class="btn btn-primary" onclick="showMessage()">စတင်လိုက်ပါ</button>
+        <button class="btn btn-outline">ပိုမိုလေ့လာရန်</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">ကျွန်တော်အကြောင်း</h2>
+        <p class="text-red">ဒါက အနီရောင်စာလုံး</p>
+        <p class="text-blue">ဒါက အပြာရောင်စာလုံး</p>
+        <p class="text-green">ဒါက အစိမ်းရောင်စာလုံး</p>
+        <p class="text-gradient">ဒါက Gradient စာလုံး 🌈</p>
+    </section>
+
+    <!-- Buttons Section -->
+    <section id="services" class="section">
+        <h2 class="section-title">ခလုတ်များ</h2>
+        <div class="button-group">
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-success">Success</button>
+            <button class="btn btn-danger">Danger</button>
+            <button class="btn btn-warning">Warning</button>
+            <button class="btn btn-outline">Outline</button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">ဆက်သွယ်ရန်</h2>
+        <form class="contact-form" onsubmit="submitForm(event)">
+            <input type="text" placeholder="သင့်နာမည်" required>
+            <input type="email" placeholder="သင့် Email" required>
+            <textarea placeholder="သင့်စာ" rows="5" required></textarea>
+            <button type="submit" class="btn btn-primary">ပို့လိုက်ပါ</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MySite. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
